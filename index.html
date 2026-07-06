@@ -1,0 +1,3044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Aisya Sayang ❤️</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Nanti font bisa diganti -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    /* ==========================================================
+   BIRTHDAY WEBSITE
+   style.css
+========================================================== */
+
+/* ===================== GOOGLE FONT ====================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ===================== ROOT ====================== */
+
+:root{
+
+    --bg:#2c1322;
+    --bg2:#3a1a2b;
+    --bg3:#4b2437;
+
+    --primary:#ff9fc1;
+    --primary2:#ffd5e5;
+
+    --text:#ffffff;
+    --text2:#e6bfd0;
+
+    --glass:rgba(255,255,255,.06);
+    --border:rgba(255,255,255,.08);
+
+    --shadow:0 20px 60px rgba(0,0,0,.35);
+
+    --radius:24px;
+
+}
+
+
+/* ===================== RESET ====================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at top,#593047 0%,#381827 45%,#22101b 100%);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    display:block;
+    width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+button{
+
+    font-family:inherit;
+
+}
+.fade-out{
+
+    animation:fadeOut .8s forwards;
+
+}
+
+.fade-in{
+
+    animation:fadeIn .8s forwards;
+
+}
+
+@keyframes fadeOut{
+
+    to{
+
+        opacity:0;
+
+        visibility:hidden;
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ===================== GLOBAL ====================== */
+
+section{
+
+    padding:110px 24px;
+
+}
+
+h1,h2,h3{
+
+    font-weight:700;
+
+}
+
+p{
+
+    color:var(--text2);
+    line-height:1.8;
+
+}
+
+.container{
+
+    width:min(1100px,92%);
+    margin:auto;
+
+}
+
+.hidden{
+
+    display:none !important;
+
+}
+
+
+/* ===================== SCROLLBAR ====================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#2b1624;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#9e5c78;
+    border-radius:20px;
+
+}
+
+
+/* ==========================================================
+   LOADING SCREEN
+========================================================== */
+
+#loading-screen{
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:100vw;
+    height:100vh;
+
+    z-index:99999;
+
+    background:#2c1322;
+}
+
+.loading-content{
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+
+.loading-content h2{
+
+    font-size:.95rem;
+
+    letter-spacing:2px;
+
+    color:var(--primary2);
+
+    margin-bottom:28px;
+
+}
+
+.loading-flower{
+
+    width:74px;
+    height:74px;
+
+    border-radius:50%;
+
+    border:4px solid rgba(255,255,255,.08);
+
+    border-top-color:var(--primary);
+
+    animation:spin 1.2s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/* ==========================================================
+   GIFT SECTION
+========================================================== */
+
+#gift-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.gift-container{
+
+    text-align:center;
+
+}
+
+.gift-container p{
+
+    margin-top:24px;
+
+    font-size:.95rem;
+
+    color:var(--primary2);
+
+}
+
+.gift-box{
+
+    width:170px;
+
+    height:170px;
+
+    margin:auto;
+
+    cursor:pointer;
+
+    position:relative;
+
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#ff8eb4,#da688d);
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.gift-box:hover{
+
+    transform:translateY(-8px) scale(1.03);
+
+}
+
+.gift-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:18px;
+
+    left:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    background:#ffe26f;
+
+}
+
+.gift-box::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:18px;
+
+    height:100%;
+
+    top:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#ffe26f;
+
+}
+
+
+/* ==========================================================
+   MAIN
+========================================================== */
+
+#main-content{
+
+    display:none;
+
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+#hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+.hero-content{
+
+    width:min(760px,92%);
+
+    background:var(--glass);
+
+    border:1px solid var(--border);
+
+    backdrop-filter:blur(18px);
+
+    padding:70px 50px;
+
+    border-radius:32px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.hero-content h1{
+
+    font-size:clamp(3rem,8vw,5.4rem);
+
+    color:var(--primary2);
+
+    line-height:1;
+
+}
+
+.hero-content h2{
+
+    margin-top:10px;
+
+    font-size:clamp(2.4rem,6vw,4rem);
+
+}
+
+#typewriter{
+
+    margin-top:26px;
+
+    min-height:34px;
+
+    font-size:1rem;
+
+    color:var(--primary);
+
+    letter-spacing:.5px;
+
+}
+/* ==========================================================
+   GALLERY
+========================================================== */
+
+#gallery{
+
+    text-align:center;
+
+}
+
+#gallery h2{
+
+    font-size:2.6rem;
+
+    color:var(--primary2);
+
+    margin-bottom:12px;
+
+}
+
+#gallery>p{
+
+    max-width:600px;
+
+    margin:0 auto 50px;
+
+}
+
+.gallery-grid{
+
+    width:min(1150px,92%);
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:24px;
+
+}
+
+.photo-card{
+
+    background:var(--glass);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.photo-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.3);
+
+}
+
+.photo-card img{
+
+    width:100%;
+
+    height:330px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.photo-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.photo-card span{
+
+    display:block;
+
+    padding:18px;
+
+    color:var(--primary2);
+
+    font-size:.95rem;
+
+}
+
+/* ==========================================================
+   NEW LETTER SECTION
+==========================================================*/
+
+#letter{
+
+    width:min(850px,92%);
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.letter-intro{
+
+    margin-bottom:45px;
+
+}
+
+.letter-label{
+
+    color:#f4b3ca;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-size:.9rem;
+
+    margin-bottom:14px;
+
+}
+
+.letter-title{
+
+    font-size:3rem;
+
+    margin-bottom:18px;
+
+    color:#fff;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.letter-divider{
+
+    font-size:1.5rem;
+
+    color:#ffc8d8;
+
+    margin-bottom:18px;
+
+}
+
+.letter-date{
+
+    color:#d9bfd1;
+
+    font-style:italic;
+
+}
+
+.letter-paper{
+
+    background:rgba(255,255,255,.07);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:30px;
+
+    padding:55px;
+
+    text-align:left;
+
+    box-shadow:
+
+        0 20px 50px rgba(0,0,0,.18);
+
+}
+
+.letter-paper p{
+
+    white-space:pre-line;
+
+    line-height:2.15;
+
+    font-size:1.08rem;
+
+    color:#f8edf2;
+
+}
+
+.letter-paper::first-letter{
+
+    font-size:2rem;
+
+    color:#ffb2cb;
+
+    font-weight:bold;
+
+}
+
+.letter-end{
+
+    margin-top:45px;
+
+    color:#ffc7d7;
+
+    font-size:1.2rem;
+
+    line-height:2;
+
+}
+
+
+
+/* ==========================================================
+   COUNTDOWN
+========================================================== */
+
+#countdown{
+
+    text-align:center;
+
+}
+
+#countdown h2{
+
+    font-size:2.6rem;
+
+    color:var(--primary2);
+
+}
+
+#countdown p{
+
+    margin:18px 0 40px;
+
+}
+
+#countdown-timer{
+
+    display:inline-flex;
+
+    gap:18px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:28px 40px;
+
+    background:var(--glass);
+
+    border:1px solid var(--border);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:24px;
+
+    font-size:clamp(2rem,5vw,3rem);
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    color:var(--primary2);
+
+    box-shadow:var(--shadow);
+
+}
+
+#countdown small{
+
+    display:block;
+
+    margin-top:18px;
+
+    color:var(--primary);
+
+    font-size:.95rem;
+
+}
+
+
+/* ==========================================================
+   ENDING
+========================================================== */
+
+#ending{
+
+    text-align:center;
+
+    padding-bottom:140px;
+
+}
+
+#ending h2{
+
+    font-size:3rem;
+
+    color:var(--primary2);
+
+    margin-bottom:20px;
+
+}
+
+#ending p{
+
+    margin-bottom:10px;
+
+}
+
+#ending h3{
+
+    margin-top:36px;
+
+    color:var(--primary);
+
+    font-weight:500;
+
+}
+
+
+/* ==========================================================
+   LIGHTBOX
+========================================================== */
+
+#lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:99999;
+
+    padding:30px;
+
+}
+
+#lightbox img{
+
+    max-width:90vw;
+
+    max-height:78vh;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+#lightbox-caption{
+
+    margin-top:24px;
+
+    color:var(--primary2);
+
+    text-align:center;
+
+}
+
+#close-lightbox{
+
+    position:absolute;
+
+    top:28px;
+
+    right:36px;
+
+    font-size:42px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+/* ==========================================================
+   MUSIC BUTTON
+========================================================== */
+
+#music-btn{
+
+    position:fixed;
+
+    bottom:24px;
+
+    right:24px;
+
+    width:58px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid var(--border);
+
+    color:white;
+
+    font-size:1.2rem;
+
+    cursor:pointer;
+
+    z-index:999;
+
+    transition:.3s;
+
+}
+
+#music-btn:hover{
+
+    transform:scale(1.08);
+
+    background:rgba(255,255,255,.12);
+
+}
+
+
+/* ==========================================================
+   DECORATIONS
+========================================================== */
+
+#floating-flowers{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:2;
+
+}
+
+.flower{
+
+    position:absolute;
+
+    top:-50px;
+
+    animation:fall linear forwards;
+
+    opacity:.75;
+
+}
+
+@keyframes fall{
+
+    from{
+
+        transform:translateY(-50px) rotate(0deg);
+
+    }
+
+    to{
+
+        transform:translateY(110vh) rotate(360deg);
+
+    }
+
+}
+
+
+#confetti-canvas{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    section{
+
+        padding:80px 20px;
+
+    }
+
+    .hero-content{
+
+        padding:45px 28px;
+
+    }
+
+    .letter-card{
+
+        padding:35px 26px;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .photo-card img{
+
+        height:290px;
+
+    }
+
+    #countdown-timer{
+
+        font-size:1.4rem;
+
+        padding:20px;
+
+        gap:10px;
+
+    }
+
+    #ending h2{
+
+        font-size:2.2rem;
+
+    }
+
+}
+/* ==========================================================
+   SCROLL REVEAL ANIMATION
+========================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* ==========================================================
+   FADE ANIMATION
+========================================================== */
+
+.fade{
+
+    animation:fade .8s ease forwards;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* ==========================================================
+   FLOAT ANIMATION
+========================================================== */
+
+.float{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+
+/* ==========================================================
+   GIFT OPEN ANIMATION
+========================================================== */
+
+.gift-box.open{
+
+    animation:giftOpen .9s ease forwards;
+
+}
+
+@keyframes giftOpen{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    40%{
+
+        transform:scale(1.15) rotate(-5deg);
+
+    }
+
+    100%{
+
+        transform:scale(2.3);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* ==========================================================
+   BUTTON HOVER
+========================================================== */
+
+button{
+
+    transition:.3s ease;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ==========================================================
+   GLASS EFFECT
+========================================================== */
+
+.glass{
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* ==========================================================
+   SECTION TITLE
+========================================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:18px;
+
+    font-size:2.6rem;
+
+    color:var(--primary2);
+
+}
+
+.section-subtitle{
+
+    text-align:center;
+
+    max-width:650px;
+
+    margin:0 auto 60px;
+
+    color:var(--text2);
+
+}
+
+
+/* ==========================================================
+   SELECTION
+========================================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+/* ==========================================================
+   REMOVE TAP HIGHLIGHT
+========================================================== */
+
+*{
+
+    -webkit-tap-highlight-color:transparent;
+
+}
+
+
+/* ==========================================================
+   SMOOTH IMAGE
+========================================================== */
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+
+/* ==========================================================
+   BACKGROUND GLOW
+========================================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:500px;
+
+    height:500px;
+
+    background:#ff9fc125;
+
+    filter:blur(140px);
+
+    border-radius:50%;
+
+    top:-220px;
+
+    left:-150px;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:450px;
+
+    height:450px;
+
+    background:#ffffff08;
+
+    filter:blur(140px);
+
+    border-radius:50%;
+
+    bottom:-180px;
+
+    right:-120px;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+/* ==========================================================
+   HERO BACKGROUND DECORATION
+========================================================== */
+
+#hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    background:radial-gradient(circle,var(--primary) 0%,transparent 70%);
+
+    opacity:.08;
+
+    border-radius:50%;
+
+    top:-120px;
+
+    left:-120px;
+
+    filter:blur(20px);
+
+}
+
+#hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:380px;
+
+    height:380px;
+
+    background:radial-gradient(circle,#ffffff 0%,transparent 70%);
+
+    opacity:.03;
+
+    border-radius:50%;
+
+    bottom:-120px;
+
+    right:-120px;
+
+    filter:blur(30px);
+
+}
+
+
+/* ==========================================================
+   HERO HEART
+========================================================== */
+
+.hero-heart{
+
+    font-size:2rem;
+
+    color:var(--primary);
+
+    margin-bottom:24px;
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ==========================================================
+   PHOTO OVERLAY
+========================================================== */
+
+.photo-card{
+
+    position:relative;
+
+}
+
+.photo-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        to top,
+
+        rgba(0,0,0,.55),
+
+        rgba(0,0,0,0)
+
+    );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.photo-card:hover::before{
+
+    opacity:1;
+
+}
+
+.photo-card span{
+
+    position:absolute;
+
+    left:18px;
+
+    bottom:18px;
+
+    z-index:3;
+
+    opacity:0;
+
+    transform:translateY(12px);
+
+    transition:.35s;
+
+    color:white;
+
+}
+
+.photo-card:hover span{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* ==========================================================
+   LETTER DECORATION
+========================================================== */
+
+.letter-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.letter-card::before{
+
+    content:"❤️";
+
+    position:absolute;
+
+    font-size:10rem;
+
+    right:-20px;
+
+    top:-20px;
+
+    opacity:.03;
+
+    transform:rotate(-15deg);
+
+}
+
+
+/* ==========================================================
+   COUNTDOWN GLOW
+========================================================== */
+
+#countdown-timer{
+
+    position:relative;
+
+}
+
+#countdown-timer::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-2px;
+
+    border-radius:inherit;
+
+    background:linear-gradient(
+        45deg,
+        #ff96b4,
+        transparent,
+        #ffd5e5
+    );
+
+    opacity:.15;
+
+    z-index:-1;
+
+}
+
+
+/* ==========================================================
+   ENDING HEART
+========================================================== */
+
+#ending h2::after{
+
+    content:" ❤";
+
+    color:var(--primary);
+
+}
+
+
+/* ==========================================================
+   FLOATING FLOWERS DEFAULT
+========================================================== */
+
+.flower{
+
+    font-size:22px;
+
+    user-select:none;
+
+    opacity:.65;
+
+    filter:drop-shadow(0 0 10px rgba(255,255,255,.15));
+
+}
+
+
+/* ==========================================================
+   SIMPLE UTILITIES
+========================================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-1{
+
+    margin-top:12px;
+
+}
+
+.mt-2{
+
+    margin-top:24px;
+
+}
+
+.mt-3{
+
+    margin-top:40px;
+
+}
+
+.mb-1{
+
+    margin-bottom:12px;
+
+}
+
+.mb-2{
+
+    margin-bottom:24px;
+
+}
+
+.mb-3{
+
+    margin-bottom:40px;
+
+}
+
+
+/* ==========================================================
+   DESKTOP SPACING
+========================================================== */
+
+@media(min-width:1200px){
+
+    section{
+
+        padding:130px 32px;
+
+    }
+
+    .hero-content{
+
+        padding:80px 60px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media(max-width:480px){
+
+    .hero-content{
+
+        padding:36px 22px;
+
+        border-radius:24px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .hero-content h2{
+
+        font-size:2rem;
+
+    }
+
+    .letter-card{
+
+        padding:28px 20px;
+
+        border-radius:22px;
+
+    }
+
+    .letter-card h2{
+
+        font-size:1.8rem;
+
+    }
+
+    #gallery h2,
+
+    #countdown h2,
+
+    #ending h2{
+
+        font-size:2rem;
+
+    }
+
+    .photo-card img{
+
+        height:240px;
+
+    }
+
+    #music-btn{
+
+        width:52px;
+
+        height:52px;
+
+        right:16px;
+
+        bottom:16px;
+
+    }
+
+}
+/* ==========================================================
+   FINAL POLISH PATCH v1
+   Tempel PALING BAWAH style
+==========================================================*/
+
+
+/* =========================
+   BACKGROUND GLOW
+========================= */
+
+body{
+
+    position:relative;
+
+    isolation:isolate;
+
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:650px;
+
+    height:650px;
+
+    left:-220px;
+
+    top:-220px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+        rgba(255,170,205,.20) 0%,
+        rgba(255,170,205,.08) 35%,
+        transparent 75%);
+
+    filter:blur(80px);
+
+    z-index:-2;
+
+    animation:blobLeft 16s ease-in-out infinite;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:600px;
+
+    height:600px;
+
+    right:-180px;
+
+    bottom:-180px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+        rgba(255,235,245,.10) 0%,
+        rgba(255,155,190,.06) 45%,
+        transparent 75%);
+
+    filter:blur(80px);
+
+    z-index:-2;
+
+    animation:blobRight 18s ease-in-out infinite;
+
+}
+
+@keyframes blobLeft{
+
+    0%{
+
+        transform:translate(0,0);
+
+    }
+
+    50%{
+
+        transform:translate(70px,40px);
+
+    }
+
+    100%{
+
+        transform:translate(0,0);
+
+    }
+
+}
+
+@keyframes blobRight{
+
+    0%{
+
+        transform:translate(0,0);
+
+    }
+
+    50%{
+
+        transform:translate(-60px,-50px);
+
+    }
+
+    100%{
+
+        transform:translate(0,0);
+
+    }
+
+}
+
+
+/* =========================
+   GIFT SECTION
+========================= */
+
+#gift-section{
+
+    opacity:0;
+
+    animation:giftAppear .9s ease forwards;
+
+}
+
+@keyframes giftAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.94);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.gift-box{
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        #ffb2cd,
+        #ff86af
+    ) !important;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.35),
+        0 0 35px rgba(255,170,205,.25);
+
+    overflow:visible;
+
+}
+
+
+/* ribbon horizontal */
+
+.gift-box::before{
+
+    height:20px !important;
+
+    background:#ffe37b !important;
+
+}
+
+
+/* ribbon vertical */
+
+.gift-box::after{
+
+    width:20px !important;
+
+    background:#ffe37b !important;
+
+}
+
+
+/* ribbon */
+
+.gift-box span{
+
+    position:absolute;
+
+    width:52px;
+
+    height:52px;
+
+    left:50%;
+
+    top:-18px;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+}
+
+
+/* hover */
+
+.gift-box:hover{
+
+    transform:translateY(-10px) scale(1.05);
+
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+#loading-screen{
+
+    transition:
+
+        opacity .8s ease,
+
+        visibility .8s ease;
+
+}
+
+.loading-hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-content{
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+
+        0 20px 60px rgba(0,0,0,.35),
+
+        0 0 50px rgba(255,170,205,.08);
+
+}
+
+
+/* =========================
+   LETTER
+========================= */
+
+#letter{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.letter-card{
+
+    all:unset;
+
+    display:block;
+
+    color:white;
+
+}
+
+.letter-card h2{
+
+    text-align:center;
+
+    font-size:2.5rem;
+
+    color:var(--primary2);
+
+    margin-bottom:45px;
+
+}
+
+.letter-card p{
+
+    line-height:2;
+
+    font-size:1.02rem;
+
+    color:var(--text2);
+
+}
+
+
+/* =========================
+   NOTES
+========================= */
+
+#notes{
+
+    padding-top:40px;
+
+}
+
+.notes-title{
+
+    text-align:center;
+
+    font-size:2.2rem;
+
+    margin-bottom:40px;
+
+    color:var(--primary2);
+
+}
+
+.notes-container{
+
+    width:min(950px,92%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit,minmax(220px,1fr));
+
+    gap:24px;
+
+}
+
+.note{
+
+    padding:26px;
+
+    border-radius:22px;
+
+    background:
+
+        rgba(255,255,255,.06);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    box-shadow:
+
+        0 15px 40px rgba(0,0,0,.18);
+
+}
+
+.note:hover{
+
+    transform:
+
+        translateY(-8px)
+
+        rotate(-1deg);
+
+}
+
+.note h3{
+
+    color:var(--primary2);
+
+    margin-bottom:12px;
+
+}
+
+.note p{
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.photo-card{
+
+    transition:
+
+        .45s ease !important;
+
+}
+
+.photo-card:hover{
+
+    transform:
+
+        translateY(-12px)
+
+        scale(1.02);
+
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+#countdown-timer{
+
+    box-shadow:
+
+        0 15px 40px rgba(0,0,0,.3),
+
+        0 0 40px rgba(255,170,205,.12);
+
+}
+
+
+/* =========================
+   ENDING
+========================= */
+
+#ending{
+
+    position:relative;
+
+}
+
+#ending::before{
+
+    content:"❤";
+
+    position:absolute;
+
+    left:50%;
+
+    top:-25px;
+
+    transform:translateX(-50%);
+
+    font-size:2rem;
+
+    color:#ff9fc1;
+
+    opacity:.7;
+
+}
+.note:nth-child(1){
+
+    transform:rotate(-2deg);
+
+}
+
+.note:nth-child(2){
+
+    transform:rotate(1deg);
+
+}
+
+.note:nth-child(3){
+
+    transform:rotate(-1deg);
+
+}
+
+.note:nth-child(4){
+
+    transform:rotate(2deg);
+
+}
+
+.note:nth-child(5){
+
+    transform:rotate(-2deg);
+
+}
+
+.note:nth-child(6){
+
+    transform:rotate(1deg);
+
+}
+
+.note:hover{
+
+    transform:rotate(0deg) translateY(-10px) scale(1.03);
+
+}
+#main-content{
+
+    display:none;
+
+    animation:fadeHero .8s ease;
+
+}
+
+@keyframes fadeHero{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+</style>
+
+<body>
+
+    <!-- ====================================================== -->
+    <!-- LOADING SCREEN -->
+    <!-- ====================================================== -->
+
+    <div id="loading-screen">
+
+        <div class="loading-content">
+
+            <h2>Preparing something special...</h2>
+
+            <div class="loading-flower"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ====================================================== -->
+    <!-- GIFT BOX -->
+    <!-- ====================================================== -->
+
+    <section id="gift-section">
+
+        <div class="gift-container">
+
+            <div class="gift-box">
+
+                <!-- nanti animasi css -->
+
+            </div>
+
+            <p>Tap to open your gift ❤️</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================================== -->
+    <!-- MAIN CONTENT -->
+    <!-- ====================================================== -->
+
+    <main id="main-content">
+
+        <!-- ================= HERO ================= -->
+
+        <section id="hero">
+
+            <div class="hero-content">
+
+                <h1>
+                    Happy Birthday
+                </h1>
+
+                <h2>
+                    Aisya ❤️
+                </h2>
+
+                <p id="typewriter"></p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= GALLERY ================= -->
+
+        <section id="gallery">
+
+            <h2>Moments Of Us</h2>
+
+            <p>
+                Just a few memories that always make me smile.
+            </p>
+
+            <div class="gallery-grid">
+
+                <!-- nanti isi foto -->
+
+                <div class="photo-card">
+                    <img src="assets/photos/1.jpg" alt="">
+                    <span>Caption</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photos/2.jpg" alt="">
+                    <span>Caption</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photos/3.jpg" alt="">
+                    <span>Caption</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photos/4.jpg" alt="">
+                    <span>Caption</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photos/5.jpg" alt="">
+                    <span>Caption</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photos/6.jpg" alt="">
+                    <span>Caption</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photos/7.jpg" alt="">
+                    <span>Caption</span>
+                </div>
+
+                <div class="photo-card">
+                    <img src="assets/photos/8.jpg" alt="">
+                    <span>Caption</span>
+                </div>
+                
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= LETTER ================= -->
+
+ <section id="letter">
+
+    <div class="letter-intro">
+
+        <p class="letter-label">
+            — From My Heart —
+        </p>
+
+        <h2 class="letter-title">
+            A Letter For You
+        </h2>
+
+        <div class="letter-divider">
+            ❀ ✦ ❀
+        </div>
+
+        <p class="letter-date">
+            July 9, 2026
+        </p>
+
+    </div>
+
+    <div class="letter-paper">
+
+        <p>
+
+My dearest Aisya,
+
+Happy birthday aisyaku sayaangg!
+
+Tiba-tiba uda tanggal 9 Juli yaa, sekarang sayang uda 23 tahun
+
+9 Juli tahun lalu, sayang ultah terus ngasi kopi ke kitaa
+
+Sekarang sayang bisa celebrate ultah ke-23 sama akuu
+Walaupun aku ndabisa dateng pas di tanggal 9 nyaa...
+
+Tapi at least aku bisa nyamperin kamuu dan kita ketemu lagii yayy
+
+Semogaaa, di usia ke-23 ini,
+Sayang selalu sehat, panjang umur, lancar rezekinya, dimudahkan urusannya, dan semuanyaa yang terbaik
+Because you deserve everything's best in this world, love. And I wish you all the best!
+
+And ofc, wait for mee sayangg. I'll be there, hugging you tight and kissing you hehee 
+
+Thank you for being you, and being there for me, for us.
+I hope today becomes another beautiful chapter in your life, and I wish every happiness in this world finds its way to you.
+
+Makin sayang sama aku yaa :p
+With all my love,
+Alde ❤️
+
+        </p>
+
+    </div>
+
+    <div class="letter-end">
+
+        💕
+
+        <br><br>
+
+        ✿ ❀ ✿ ❀ ✿
+
+    </div>
+
+</section>
+<section id="notes">
+
+    <h2 class="notes-title">
+        Notes Buat Aisya Sayang 🌸
+    </h2>
+
+    <div class="notes-container">
+
+        <div class="note">
+            <h3>🌷</h3>
+            <p>
+                Jangan lupa mam,
+                apalagi sarapan.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>💗</h3>
+            <p>
+                Please remember that
+                I'll always be proud of you.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>🌸</h3>
+            <p>
+                Bobok jangan sering kemaleman yaa,
+                kesehatan kamu penting.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>🌹</h3>
+            <p>
+                Don't overwork yourself.
+                Rest is important too.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>🐰</h3>
+            <p>
+                Aku akan selalu bangga sama kamu, 
+                sayang.
+            </p>
+        </div>
+
+        <div class="note">
+            <h3>🤍</h3>
+            <p>
+                No matter what happens,
+                I'll always choose you.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- ================= COUNTDOWN ================= -->
+
+        <section id="countdown">
+
+            <h2>
+                One More Thing...
+            </h2>
+
+            <p>
+                The best gift is getting closer.
+            </p>
+
+            <div id="countdown-timer">
+
+                00 : 00 : 00 : 00
+
+            </div>
+
+            <small>
+                See you soon ❤️
+            </small>
+
+        </section>
+
+
+
+        <!-- ================= ENDING ================= -->
+
+        <section id="ending">
+
+            <h2>
+                Happy Birthday,
+                <br>
+                My Love ❤️
+            </h2>
+
+            <p>
+                Thank you for being you.
+            </p>
+
+            <p>
+                Sampai ketemu beberapa jam lagi yaa.
+            </p>
+
+            <h3>
+                — Alde
+            </h3>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ====================================================== -->
+    <!-- LIGHTBOX -->
+    <!-- ====================================================== -->
+
+    <div id="lightbox">
+
+        <span id="close-lightbox">&times;</span>
+
+        <img id="lightbox-image" src="" alt="">
+
+        <p id="lightbox-caption"></p>
+
+    </div>
+
+
+
+    <!-- ====================================================== -->
+    <!-- MUSIC -->
+    <!-- ====================================================== -->
+
+    <audio id="bg-music" loop>
+
+        <source src="assets/music/shape.mp3" type="audio/mpeg">
+
+    </audio>
+
+
+
+    <!-- ====================================================== -->
+    <!-- MUSIC BUTTON -->
+    <!-- ====================================================== -->
+
+    <button id="music-btn">
+
+        🎵
+
+    </button>
+
+
+
+    <!-- ====================================================== -->
+    <!-- FLOATING FLOWERS -->
+    <!-- ====================================================== -->
+
+    <div id="floating-flowers"></div>
+
+
+
+    <!-- ====================================================== -->
+    <!-- CONFETTI -->
+    <!-- ====================================================== -->
+
+    <canvas id="confetti-canvas"></canvas>
+
+<script>
+const loadingScreen = document.getElementById("loading-screen");
+
+const giftBox = document.querySelector(".gift-box");
+
+const giftSection = document.getElementById("gift-section");
+
+const mainContent = document.getElementById("main-content");
+
+const music = document.getElementById("bg-music");
+
+const musicBtn = document.getElementById("music-btn");
+
+const typewriter = document.getElementById("typewriter");
+
+const countdown = document.getElementById("countdown-timer");
+
+const revealElements = document.querySelectorAll("section");
+
+const lightbox = document.getElementById("lightbox");
+
+const lightboxImage = document.getElementById("lightbox-image");
+
+const lightboxCaption = document.getElementById("lightbox-caption");
+
+const closeLightbox = document.getElementById("close-lightbox");
+
+const galleryCards = document.querySelectorAll(".photo-card");
+
+
+/* ==========================================================
+   LOADING
+========================================================== */
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        loadingScreen.style.opacity = "0";
+
+        loadingScreen.style.pointerEvents = "none";
+
+        setTimeout(() => {
+
+            loadingScreen.remove();
+
+        }, 700);
+
+    }, 1800);
+
+})
+
+
+/* ==========================================================
+   GIFT OPEN
+========================================================== */
+
+giftBox.addEventListener("click",()=>{
+
+    giftBox.classList.add("open");
+
+    music.play().catch(()=>{});
+
+    setTimeout(()=>{
+
+        giftSection.animate([
+
+            {
+
+                opacity:1,
+
+                transform:"scale(1)"
+
+            },
+
+            {
+
+                opacity:0,
+
+                transform:"scale(1.04)"
+
+            }
+
+        ],{
+
+            duration:700,
+
+            fill:"forwards",
+
+            easing:"ease"
+
+        });
+
+        setTimeout(()=>{
+
+            giftSection.style.display="none";
+
+            mainContent.style.display="block";
+
+            mainContent.classList.add("fade");
+
+            window.scrollTo({
+
+                top:0,
+
+                behavior:"instant"
+
+            });
+
+        },650);
+
+    },700);
+
+});
+
+
+/* ==========================================================
+   MUSIC BUTTON
+========================================================== */
+
+let playing = true;
+
+musicBtn.addEventListener("click",()=>{
+
+    if(playing){
+
+        music.pause();
+
+        musicBtn.innerHTML="🔇";
+
+    }
+
+    else{
+
+        music.play();
+
+        musicBtn.innerHTML="🎵";
+
+    }
+
+    playing=!playing;
+
+});
+
+
+/* ==========================================================
+   TYPEWRITER
+========================================================== */
+
+const texts=[
+
+    "Happy Birthday, My Love ❤️",
+
+    "I hope this little gift makes you smile.",
+
+    "Scroll kebawah yaa"
+
+];
+
+let textIndex=0;
+
+let charIndex=0;
+
+let deleting=false;
+
+function typeEffect(){
+
+    const current=texts[textIndex];
+
+    if(!deleting){
+
+        typewriter.textContent=current.substring(0,charIndex++);
+
+        if(charIndex>current.length){
+
+            deleting=true;
+
+            setTimeout(typeEffect,1800);
+
+            return;
+
+        }
+
+    }
+
+    else{
+
+        typewriter.textContent=current.substring(0,charIndex--);
+
+        if(charIndex<0){
+
+            deleting=false;
+
+            textIndex++;
+
+            if(textIndex>=texts.length){
+
+                textIndex=0;
+
+            }
+
+        }
+
+    }
+
+    setTimeout(typeEffect,deleting?35:70);
+
+}
+
+typeEffect();
+
+
+/* ==========================================================
+   COUNTDOWN
+========================================================== */
+
+// GANTI KE TANGGAL DATANGMU
+
+const targetDate=new Date("July 10, 2026 00:15:00").getTime();
+
+function updateCountdown(){
+
+    const now=new Date().getTime();
+
+    const distance=targetDate-now;
+
+    if(distance<=0){
+
+        countdown.innerHTML="I'm here ❤️";
+
+        return;
+
+    }
+
+    const days=Math.floor(distance/(1000*60*60*24));
+
+    const hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+    const minutes=Math.floor((distance%(1000*60*60))/(1000*60));
+
+    const seconds=Math.floor((distance%(1000*60))/1000);
+
+    countdown.innerHTML=
+
+    `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+}
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
+    
+/* ==========================================================
+   SCROLL REVEAL
+========================================================== */
+
+const observer = new IntersectionObserver(
+
+(entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+},
+
+{
+
+    threshold:.15
+
+}
+
+);
+
+document.querySelectorAll("section").forEach(section=>{
+
+    section.classList.add("reveal");
+
+    observer.observe(section);
+
+});
+
+
+/* ==========================================================
+   LIGHTBOX
+========================================================== */
+
+galleryCards.forEach(card=>{
+
+    card.addEventListener("click",()=>{
+
+        const img=card.querySelector("img");
+
+        const caption=card.querySelector("span");
+
+        lightbox.style.display="flex";
+
+        lightboxImage.src=img.src;
+
+        lightboxCaption.textContent=caption.textContent;
+
+        document.body.style.overflow="hidden";
+
+    });
+
+});
+
+closeLightbox.addEventListener("click",closeBox);
+
+lightbox.addEventListener("click",(e)=>{
+
+    if(e.target===lightbox){
+
+        closeBox();
+
+    }
+
+});
+
+function closeBox(){
+
+    lightbox.style.display="none";
+
+    document.body.style.overflow="auto";
+
+}
+
+
+/* ==========================================================
+   ESC TO CLOSE LIGHTBOX
+========================================================== */
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key==="Escape"){
+
+        closeBox();
+
+    }
+
+});
+
+
+/* ==========================================================
+   FLOATING FLOWERS
+========================================================== */
+
+const flowerContainer=document.getElementById("floating-flowers");
+
+const flowers=[
+
+    "🌸",
+
+    "🌷",
+
+    "🌹",
+
+    "💮",
+
+    "🌺"
+
+];
+
+function createFlower(){
+
+    const flower=document.createElement("div");
+
+    flower.className="flower";
+
+    flower.innerHTML=flowers[Math.floor(Math.random()*flowers.length)];
+
+    flower.style.left=Math.random()*100+"vw";
+
+    flower.style.fontSize=(18+Math.random()*18)+"px";
+
+    flower.style.animationDuration=(8+Math.random()*8)+"s";
+
+    flower.style.opacity=.2+Math.random()*.6;
+
+    flowerContainer.appendChild(flower);
+
+    setTimeout(()=>{
+
+        flower.remove();
+
+    },16000);
+
+}
+
+setInterval(createFlower,800);
+
+
+/* ==========================================================
+   HERO FADE IN
+========================================================== */
+
+window.addEventListener("load",()=>{
+
+    const hero=document.querySelector(".hero-content");
+
+    hero.classList.add("fade");
+
+});
+
+
+/* ==========================================================
+   PREVENT IMAGE DRAG
+========================================================== */
+
+document.querySelectorAll("img").forEach(img=>{
+
+    img.setAttribute("draggable","false");
+
+});
+
+
+/* ==========================================================
+   SMOOTH SCROLL FOR INTERNAL LINKS
+========================================================== */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+    anchor.addEventListener("click",(e)=>{
+
+        e.preventDefault();
+
+        const target=document.querySelector(anchor.getAttribute("href"));
+
+        if(target){
+
+            target.scrollIntoView({
+
+                behavior:"smooth"
+
+            });
+
+        }
+
+    });
+
+});
+
+
+/* ==========================================================
+   ENDING CONFETTI PLACEHOLDER
+========================================================== */
+
+/*
+Nanti kita pakai canvas-confetti CDN.
+
+Di bagian ending atau saat gift dibuka,
+tinggal panggil:
+
+confetti({
+    particleCount:150,
+    spread:120,
+    origin:{y:.6}
+});
+
+*/
+
+
+/* ==========================================================
+   FINISHED
+========================================================== */
+
+console.log("❤️ Happy Birthday Website Loaded Successfully ❤️");
+
+</script>
+
+</body>
+
+</html>
